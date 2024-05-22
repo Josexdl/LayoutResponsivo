@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.caixa {
+    flex: 1;
+    margin-right: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.caixa img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caixa p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
