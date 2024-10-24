@@ -1,21 +1,74 @@
+/* Estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif; /* Fonte FIFA aplicada */
+  background-color: #1d3557; /* Azul escuro, similar ao tema de menus FIFA */
+  color: #f1faee; /* Branco suave */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://example.com/fifa-background.jpg'); /* Imagem de fundo personalizada (substituir o link pela URL real) */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilo do título */
 h1 {
-    text-align: center;
-  }
-  
+  font-family: 'Bebas Neue', sans-serif; /* Fonte aplicada ao título */
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #f1faee; /* Vermelho FIFA */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #000; /* Sombra no texto */
+}
+
+/* Estilo da lista */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+/* Estilo dos links */
+ul a {
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif; /* Fonte aplicada aos links */
+  font-size: 1.5rem;
+  color: #f1faee; /* Cor de texto branco */
+  padding: 15px 25px;
+  background-color: #457b9d; /* Azul FIFA */
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #f1faee; /* Bordas brancas */
+}
+
+ul a:hover {
+  background-color: #f1faee; /* Vermelho FIFA no hover */
+  color: #1d3557; /* Azul escuro no hover */
+  transform: translateY(-5px); /* Efeito de "flutuar" no hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Aumentar a sombra no hover */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
   ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  a {
-    text-decoration: none;
-    color: #000;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #000;
+
+  ul a {
+    text-align: center;
+    padding: 20px;
   }
-  
-  a:hover {
-    background-color: #ccc;
-  }
+}
